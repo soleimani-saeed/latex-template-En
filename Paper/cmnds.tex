@@ -1,0 +1,91 @@
+\documentclass[12pt,a4paper]{article}
+%========================================================
+%                   Essential Packages
+%========================================================
+\usepackage{comment}
+% -------------------------------------------------------
+%                       Mathematics
+% -------------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+%=========================================================
+%           REVIEW / SUBMISSION FIGURE SYSTEM
+%=========================================================
+\usepackage{xparse}
+% -------------------------------------------------------
+% Graphics and Figures
+\usepackage{graphicx}
+% \usepackage[draft]{graphicx}%alonge with the	 \setkeys{Gin}{draft}			prevents LaTeX from reading the actual image/PDF file 
+%\usepackage{caption}
+\usepackage[font=small,justification=centering]{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+\graphicspath{{./figs/}}
+
+
+% -------------------------------------------------------
+%                          Tables
+% -------------------------------------------------------
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{pdflscape} % Whole page rotation
+%\usepackage{lscape} % Table rotation
+\usepackage{rotating}
+
+% -------------------------------------------------------
+%                           Fonts
+% -------------------------------------------------------
+\usepackage{newtxtext,newtxmath}
+
+% -------------------------------------------------------
+%                        Page layout
+% -------------------------------------------------------
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	top=2.5cm, bottom=2.5cm,
+	left=2.5cm, right=2.5cm
+}
+% -------------------------------------------------------
+%                        Spacing
+% -------------------------------------------------------
+\usepackage{setspace}
+\doublespacing
+
+% Bibliography
+\usepackage[authoryear,round,sort]{natbib}
+
+
+% -------------------------------------------------------
+%                       Colors and URLs
+% -------------------------------------------------------
+\usepackage{xcolor}
+\usepackage{url}
+% Cross-referencing — load hyperref BEFORE lineno <---
+\usepackage[pagebackref]{hyperref}
+\usepackage{doi} % Automatically turns DOI numbers into clickable links
+
+
+\hypersetup{
+	colorlinks = true,
+	linkcolor  = red,
+	citecolor  = blue,
+	urlcolor   = blue,
+	pdfauthor  = {Saeed Soleimani, Bellie Sivakumar},
+	pdftitle   = {SUHI/SUCI variability},
+	pdfsubject = {Urban climate analysis},
+	pdfkeywords = {SUHI, UHI, MODIS, cities, temperature, Surface Urban Heat/Cool Island, Time Series Analysis, Google Earth Engine GEE, MODIS}
+            }
+ 
+% Line numbers — load AFTER hyperref
+\usepackage[switch,mathlines]{lineno}
+% \usepackage[switch]{lineno}
+
+\modulolinenumbers[1]

@@ -75,8 +75,7 @@
 % -------------------------------------------------------
 %               Shared Metadata & Keywords
 % -------------------------------------------------------
-\newcommand{\myauthors}{Saeed Soleimani, Bellie Sivakumar}
-\newcommand{\mykeywords}{Surface Urban Heat Island (SUHI); Surface Urban Cool Island (SUCI); K\"oppen--Geiger Climate Zones; Mann-Kendall Trend Test; Google Earth Engine (GEE); Moderate Resolution Imaging Spectroradiometer (MODIS)}
+\input{meta}
 
 \providecommand{\keywords}[1]{%
 	\noindent\textbf{Keywords:} #1%
@@ -88,8 +87,8 @@
 	citecolor   = blue,
 	urlcolor    = blue,
 	pdfauthor   = {\myauthors},
-	pdftitle    = {SUHI/SUCI variability},
-	pdfsubject  = {Urban climate analysis},
+	pdftitle    = {\mytitle},
+	pdfsubject  = {\mysubject},
 	pdfkeywords = {\mykeywords}
 }
  
@@ -98,3 +97,10 @@
 % \usepackage[switch]{lineno}
 
 \modulolinenumbers[1]
+
+% -------------------------------------------------------
+%                   Title and Author Setup
+% -------------------------------------------------------
+\title{\mytitle}
+\author{\myauthors}
+\date{}

@@ -72,17 +72,26 @@
 \usepackage[pagebackref]{hyperref}
 \usepackage{doi} % Automatically turns DOI numbers into clickable links
 
+% -------------------------------------------------------
+%               Shared Metadata & Keywords
+% -------------------------------------------------------
+\newcommand{\myauthors}{Saeed Soleimani, Bellie Sivakumar}
+\newcommand{\mykeywords}{Surface Urban Heat Island (SUHI); Surface Urban Cool Island (SUCI); K\"oppen--Geiger Climate Zones; Mann-Kendall Trend Test; Google Earth Engine (GEE); Moderate Resolution Imaging Spectroradiometer (MODIS)}
+
+\providecommand{\keywords}[1]{%
+	\noindent\textbf{Keywords:} #1%
+}
 
 \hypersetup{
-	colorlinks = true,
-	linkcolor  = red,
-	citecolor  = blue,
-	urlcolor   = blue,
-	pdfauthor  = {Saeed Soleimani, Bellie Sivakumar},
-	pdftitle   = {SUHI/SUCI variability},
-	pdfsubject = {Urban climate analysis},
-	pdfkeywords = {SUHI, UHI, MODIS, cities, temperature, Surface Urban Heat/Cool Island, Time Series Analysis, Google Earth Engine GEE, MODIS}
-            }
+	colorlinks  = true,
+	linkcolor   = red,
+	citecolor   = blue,
+	urlcolor    = blue,
+	pdfauthor   = {\myauthors},
+	pdftitle    = {SUHI/SUCI variability},
+	pdfsubject  = {Urban climate analysis},
+	pdfkeywords = {\mykeywords}
+}
  
 % Line numbers — load AFTER hyperref
 \usepackage[switch,mathlines]{lineno}

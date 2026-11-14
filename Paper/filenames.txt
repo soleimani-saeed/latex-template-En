@@ -1,0 +1,22 @@
+C:\Users\Admin\Desktop\Latex Templeate\Paper\abst.tex
+C:\Users\Admin\Desktop\Latex Templeate\Paper\bibs.bib
+C:\Users\Admin\Desktop\Latex Templeate\Paper\cmnds.tex
+C:\Users\Admin\Desktop\Latex Templeate\Paper\filenames.txt
+C:\Users\Admin\Desktop\Latex Templeate\Paper\Intro.tex
+C:\Users\Admin\Desktop\Latex Templeate\Paper\meta.tex
+C:\Users\Admin\Desktop\Latex Templeate\Paper\Methods.tex
+C:\Users\Admin\Desktop\Latex Templeate\Paper\ResultandDiscussion.tex
+C:\Users\Admin\Desktop\Latex Templeate\Paper\WConclusion.tex
+C:\Users\Admin\Desktop\Latex Templeate\Paper\Wmain.tex
+C:\Users\Admin\Desktop\Latex Templeate\Paper\figs\Figure 2 -Seasonal SUHI comparison.jpg
+abst.tex 
+bibs.bib 
+cmnds.tex 
+filenames.txt 
+Intro.tex 
+meta.tex 
+Methods.tex 
+ResultandDiscussion.tex 
+WConclusion.tex 
+Wmain.tex 
+Figure 2 -Seasonal SUHI comparison.jpg 

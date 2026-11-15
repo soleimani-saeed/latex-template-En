@@ -1,0 +1,64 @@
+% Hyperlinks
+\usepackage{xurl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hyperlinks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[
+unicode=true,
+pagebackref=true,      % بازگشت از مراجع به متن (شماره صفحه در کتابنامه)
+colorlinks=true,       % رنگی کردن لینک‌ها به جای کادر دور آن‌ها
+linktocpage=true,      % در فهرست مطالب، فقط شماره صفحه لینک شود
+bookmarks=true,
+bookmarksopen=true,
+bookmarksnumbered=true
+]{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PDF Viewer Options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+	%----------------------------------------
+	% Meta Data
+	%----------------------------------------
+	pdfauthor   = {\BookAuthor,  \BookCoAuthor; مترجم: \BookTranslator},
+	pdftitle    = {\BookTitle},
+	pdfsubject  = {\BookSubject},
+	pdfkeywords = {\BookKeywords},
+%	pdfsubject = {Translated by \BookTranslator},
+	%----------------------------------------
+	% Link colors
+	%----------------------------------------
+	linkcolor=red,         % رنگ لینک‌های داخلی (فصل‌ها، پانویس‌ها)  cyan
+	citecolor=blue,        % رنگ ارجاعات کتابنامه‌ای (مثل Chatfield)
+    urlcolor=blue,         % رنگ آدرس‌های اینترنتی
+	filecolor=magenta,     % رنگ لینک به فایل‌های محلی  cyan
+    menucolor=red,         % رنگ منوهای Acrobat
+	%----------------------------------------
+	% Viewer
+	%----------------------------------------
+	pdfdisplaydoctitle=true,
+	pdfpagelayout=TwoPageRight,
+	pdfstartview=FitH,
+	pdfpagemode=UseOutlines,
+	%----------------------------------------
+	% Language
+	%----------------------------------------
+	pdflang=fa-IR
+    % hidelinks             % اگر می‌خواهید لینک‌ها رنگی نباشند، این را فعال کنید
+    % runcolor=red, %- same as file color]       % عملکرد: اگر در فایل لاتک خود لینکی ساخته باشید که قرار است یک فایل خارجی (غیر از PDF یا وب) را باز کند یا یک برنامه را اجرا کند، از این رنگ استفاده می‌شود.
+    % allcolors=red, %-- use this if you want to set all links to the same color
+    % ، «لنگر» مقصدی است که هنوز به هیچ متنی وصل نشده یا صرفاً یک نقطه نشانه‌گذاری شده در صفحه است.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long URL breaking
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%
+	\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+	\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+	\do\u\do\v\do\w\do\x\do\y\do\z%
+	\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J%
+	\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T%
+	\do\U\do\V\do\W\do\X\do\Y\do\Z%
+	\do\/\do\-\do\.\do\*\do\_\do\?\do\&\do\=\do\+\do\!}

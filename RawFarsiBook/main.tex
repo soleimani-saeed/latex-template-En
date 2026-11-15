@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 						Main file
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	      				Entire preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Preamble/Preamble}
+\graphicspath{{Figures/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 						Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\listfiles % The \listfiles command instructs LaTeX to print a complete list of all files, packages, and classes used to compile your document, along with their version numbers and dates, directly into your log file (.log).
+\begin{document}
+
+\setcounter{tocdepth}{4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 				         Front matter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+	\input{FrontMatter/00_FrontMatter}
+		\clearpage
+        \begin{figure}
+            \centering
+            \includegraphics[width=1\linewidth]{Figures/xepersian-logo_page-0001.jpg}
+            \caption*{بهره‌برده از \lr{XePersian}}
+            \label{fig:placeholder_XePersian}
+        \end{figure}
+	% \cleardoublepage
+	
+	\tableofcontents
+%	\listoffigures
+%	\listoftables
+%	\lstlistoflistings
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 					    Main matter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+% \onehalfspacing % Set 1.5 line spacing here
+% \linespread{1.5}
+    \doublespacing
+
+	\input{Chapters/Chapter01}
+	\input{Chapters/Chapter02}
+	\input{Chapters/Chapter03}
+	\input{Chapters/Chapter04}	
+	\input{Chapters/Chapter05}
+	\input{Chapters/Chapter06}
+	\input{Chapters/Chapter07}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					Back matter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+	
+\bibliographystyle{plainnat}
+\bibliography{Bibliography/references}
+	
+\end{document}

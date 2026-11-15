@@ -1,0 +1,86 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% XePersian
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[
+% logo=on,
+inlinemathdigits=persian,
+displaymathdigits=persian,
+extrafootnotefeatures
+]{xepersian}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \settextfont[Scale=1,Path = Preamble/Fonts/]{XB Yas.ttf}
+% % Use exact file extensions and folder names (case-sensitive)
+
+% \settextfont[
+%     Path = Preamble/Fonts/ ,
+%     BoldFont = {XB Yas Bd.ttf} ,
+%     ItalicFont = {XB Yas It.ttf} ,
+%     BoldItalicFont = {XB Yas BdIt.ttf} ,
+%     SlantedFont = {XB Yas It.ttf}
+% ]{XB Yas.ttf}
+% \setdigitfont[Path = Preamble/Fonts/]{XB Yas.ttf}
+% \setmathdigitfont[Path = Preamble/Fonts/]{XB Yas.ttf}
+% \setlatintextfont[Scale=.95]{Times New Roman}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\settextfont[
+    Path = Preamble/Fonts/ ,
+    BoldFont = {XB Yas Bd.ttf} ,
+    ItalicFont = {XB Yas It.ttf} ,
+    BoldItalicFont = {XB Yas BdIt.ttf} ,
+    SlantedFont = {XB Yas It.ttf}
+]{XB Yas.ttf}
+
+% Link the digit fonts directly to the exact same family instance
+\setdigitfont[
+    Path = Preamble/Fonts/ ,
+    BoldFont = {XB Yas Bd.ttf} ,
+    ItalicFont = {XB Yas It.ttf} 
+]{XB Yas.ttf}
+
+\setmathdigitfont[
+    Path = Preamble/Fonts/ ,
+    BoldFont = {XB Yas Bd.ttf} ,
+    ItalicFont = {XB Yas It.ttf} 
+]{XB Yas.ttf}
+
+\setlatintextfont[Scale=.95]{Times New Roman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \settextfont[
+%     Path = Preamble/Fonts/ ,
+%     BoldFont = {XB Yas Bd.ttf} ,
+%     ItalicFont = {XB Yas It.ttf} ,
+%     BoldItalicFont = {XB Yas BdIt.ttf} ,
+%     % These mapping hooks resolve the undefined shape error:
+%     ItalicFeatures = {Font = {XB Yas It.ttf}} ,
+%     BoldItalicFeatures = {Font = {XB Yas BdIt.ttf}}
+% ]{XB Yas.ttf}
+
+% \setdigitfont[Path = Preamble/Fonts/]{XB Yas.ttf}
+% \setmathdigitfont[Path = Preamble/Fonts/]{XB Yas.ttf}
+% \setlatintextfont[Scale=.95]{Times New Roman}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \settextfont[
+%     Path = Preamble/Fonts/ ,
+%     Extension = .ttf ,
+%     BoldFont ={XB Yas Bd} ,
+%     ItalicFont = {XB Yas It} ,
+%     BoldItalicFont = {XB Yas BdIt}
+% ]{XB Yas}
+% \setdigitfont[Path = Preamble/Fonts/, Extension = .ttf]{XB Yas}
+% \setmathdigitfont[Path = Preamble/Fonts/, Extension = .ttf]{XB Yas}
+% % \setdigitfont[Digits=Latin]{Times New Roman} % اعداد انگلیسی
+% \setlatintextfont[Scale=.95]{Times New Roman} % فونت انگلیسی برای متن‌های داخل \lr{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \paragraphfootnotes
+%\onecolumnfootnotes 
+\twocolumnfootnotes
+%\threecolumnfootnotes
+%\fourcolumnfootnotes

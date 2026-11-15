@@ -1,0 +1,24 @@
+% Graphics and Figures
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Work	with	Figures 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} % Required for inserting images
+% \usepackage[demo]{graphicx} % Replaces Images with Black Boxes
+
+%\usepackage[draft]{graphicx}% alonge with the
+% \setkeys{Gin}{draft}	     % prevents LaTeX from reading the actual image/PDF file 
+
+\graphicspath{{Figures/}{Images/}{Graphics/}}
+\usepackage{float}
+\usepackage[font=small,justification=centering]{caption}
+\usepackage{subcaption}
+
+
+\graphicspath{{Figures/}}
+\newcommand{\Rlogo}{%
+\raisebox{-0.1ex}{\includegraphics[height=2ex]{Rlogo.pdf}}%
+}
+
+\newcommand{\RStudio}{%
+\raisebox{-0.55ex}{\includegraphics[height=2.75ex]{RStudio.pdf}}%
+}

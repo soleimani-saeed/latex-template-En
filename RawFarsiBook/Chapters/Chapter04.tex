@@ -1,0 +1,38 @@
+\chapter{ }\label{chp:4}
+ی سایتیشن الکی
+ \citep{persian_key} شماره نخورده چرا
+\begin{latin}
+\begin{tcolorbox}[geecode] 
+\begin{lstlisting}[language=GEEJS]
+// NDVI calculation using Sentinel-2 SR data in Google Earth Engine.
+var ndvi = s2.normalizedDifference(["B8", "B4"]).rename("NDVI");
+Map.centerObject(aoi, 10);
+Map.addLayer(ndvi.clip(aoi), {min:-1, max:1, palette:["white","yellow","green"]}, "NDVI");
+\end{lstlisting}
+\end{tcolorbox}
+\end{latin}
+
+\section{انگریزی}
+
+\begin{latin}
+The Index-Based Built-up Index (IBI) integrates NDBI, SAVI, and MNDWI to provide \citep{english_key} a more robust indicator of built-up areas by suppressing vegetation and water signals. It is effective for urban boundary extraction, urban heat island analysis, and fine-scale urbanization studies \citep{zha2003}. It is given by:
+\begin{equation}
+\label{eq:ibi}
+IBI = \frac{\mathrm{NDBI} - \frac{(\mathrm{SAVI} + \mathrm{MNDWI})}{2}}{\mathrm{NDBI} + \frac{(\mathrm{SAVI} + \mathrm{MNDWI})}{2}}
+\end{equation}
+The code below illustrates a practical implementation of the above formulation.
+\begin{tcolorbox}[geecode]  
+\begin{lstlisting}[language=GEEJS] 
+// IBI implementation in GEE.
+// Compute NDBI, SAVI, and MNDWI first (as shown earlier)
+
+// Integrate into IBI expression
+var ibi = s2.expression(
+  "(NDBI - ((SAVI + MNDWI)/2)) / (NDBI + ((SAVI + MNDWI)/2))", {
+    "NDBI": ndbi,
+    "SAVI": savi,
+    "MNDWI": mndwi
+}).rename("IBI");
+\end{lstlisting} 
+\end{tcolorbox}
+\end{latin}

@@ -1,0 +1,9 @@
+
+Quick Cheat Sheet for Common Prefixes
+
+Using a short prefix in your commit messages keeps your paper's history easy to scan later:
+• docs: Writing or editing text in sections (Intro.tex, Methods.tex, abst.tex)
+• fix: Fixing typos, broken citations, equations, or formatting bugs
+• feat: Adding new figures, tables, or sections
+• refactor: Reorganizing macros, packages, or file structure (cmnds.tex, meta.tex)
+If you don't already have a .gitignore file set up to keep LaTeX build clutter (.aux, .log, .bbl, .pdf) out of your GitHub repository, let me know and I can give you a ready-to-use one!

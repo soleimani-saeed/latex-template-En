@@ -1,0 +1,31 @@
+% Margin notes
+
+% Place here:
+% \SpringerCircle
+% \SpringerSquare
+% \newcounter{mcount}
+% \mynote
+% \newcounter{GnoteCount}
+% \Gnote
+% --- تنظیمات اختصاصی یادداشت‌ها ---
+\newcommand{\SpringerCircle}[1]{\raisebox{0.25ex}{\begin{tikzpicture}[baseline=(char.base)]\node[circle,draw,line width=0.35pt,inner sep=0.7pt,anchor=base] (char) {\scriptsize #1};\end{tikzpicture}}}
+\newcommand{\SpringerSquare}[1]{\raisebox{0.25ex}{\begin{tikzpicture}[baseline=(char.base)]\node[rectangle,draw,line width=0.35pt,inner sep=1.5pt,anchor=base] (char) {\scriptsize #1};\end{tikzpicture}}}
+
+\newcounter{mcount} \MakePerPage{mcount} 
+\newcommand{\mynote}[1]{\refstepcounter{mcount}\hypertarget{mText:\thepage:\arabic{mcount}}{}\textsuperscript{\hyperlink{mMargin:\thepage:\arabic{mcount}}{\SpringerSquare{\arabic{mcount}}}}\marginpar{\hypertarget{mMargin:\thepage:\arabic{mcount}}{}\small\setRTL\sloppy\hyperlink{mText:\thepage:\arabic{mcount}}{\textbf{\SpringerSquare{\arabic{mcount}}.}}\,#1\par}}
+
+\newcounter{GnoteCount} \MakePerPage{GnoteCount}
+\newcommand{\Gnote}[1]{\refstepcounter{GnoteCount}\hypertarget{gText:\thepage:\arabic{GnoteCount}}{}\textsuperscript{\hyperlink{gMargin:\thepage:\arabic{GnoteCount}}{\SpringerCircle{\arabic{GnoteCount}}}}\marginpar{\hypertarget{gMargin:\thepage:\arabic{GnoteCount}}{}\begin{tcolorbox}[enhanced,breakable,size=minimal,colback=gray!15,colframe=gray!45,boxrule=0.35pt,left=3pt,right=3pt,top=3pt,bottom=3pt,arc=1pt,fontupper=\scriptsize]\begin{RTL}\hyperlink{gText:\thepage:\arabic{GnoteCount}}{\textbf{\SpringerCircle{\arabic{GnoteCount}}}}\,#1\par\end{RTL}\end{tcolorbox}}}
+
+% ==========================================================
+% راه حل نهایی برای حذف شماره فصل از بخش و ریست شدن در هر فصل
+% ==========================================================
+\makeatletter
+% حذف پیشوند فصل از شماره بخش
+\renewcommand{\thesection}{\arabic{section}}
+% اطمینان از اینکه زی‌پرشین فرمت ما را بازنویسی نمی‌کند
+\bidi@patchcmd{\@makechapterhead}{\cleardoublepage}{%
+	\cleardoublepage\setcounter{section}{0}%
+}{}{}
+\makeatother
+% ==========================================================
